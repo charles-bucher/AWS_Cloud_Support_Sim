@@ -1,128 +1,120 @@
 ⚡ Cloud Support Simulation Portfolio
 
+👋 Hi, I’m Charles Bucher — a self-taught Cloud Support & NOC Engineer.
+This repo simulates real AWS support workflows: incidents, troubleshooting, investigations, fixes, and validations.
+Everything here mirrors what junior cloud engineers, NOC analysts, and L1/L2 support specialists do every day.
 
+🚀 What This Portfolio Demonstrates
 
+EC2 troubleshooting (SG issues, connectivity, provisioning failures)
 
+Lambda error analysis (CloudWatch logs, IAM failures, code bugs)
 
+S3 & IAM access debugging (permissions, bucket policies, CLI testing)
 
+Operational workflows (root-cause analysis, structured incident handling)
 
+Automation & IaC (Terraform, Python, CloudFormation)
 
-👋 Hi! I’m Charles Bucher, a self-taught Cloud Support & NOC Engineer.
-This portfolio simulates real-world Cloud Support workflows, showing step-by-step troubleshooting across EC2, Lambda, S3, IAM, and more. Perfect for entry-level cloud support, NOC, or technical support roles.
+Version control discipline (Git, GitHub Actions)
 
-🚀 What You’ll See in Action
-
-EC2 Troubleshooting – Deploy instances via CloudFormation, debug Security Groups, test SSH connectivity.
-
-Lambda Error Handling – Diagnose errors, check logs, fix IAM/code issues, redeploy.
-
-S3 & IAM Access Control – Identify IAM misconfigurations, simulate access failures, fix permissions.
-
-Portfolio-Ready Visuals – Inline screenshots to showcase scenarios clearly.
-
-Skills Gained – Terraform, CloudFormation, EC2, Lambda, S3, IAM, Python scripting, monitoring, CI/CD basics, operational troubleshooting.
+This is the “I actually know how to troubleshoot cloud systems” repo.
 
 🛠️ Core Skills Demonstrated
-Category	Tools / Skills
-AWS Services	EC2, Lambda, S3, IAM, CloudFormation, CloudWatch
+Category	Skills
+AWS Services	EC2, Lambda, S3, IAM, CloudWatch, CloudFormation
 Automation & IaC	Terraform, Python scripting
-Monitoring & Logging	CloudWatch, log analysis
-Operational Troubleshooting	Incident simulation, root cause analysis, SLA adherence
-Version Control & CI/CD	GitHub Actions, repo management
-📂 Portfolio Scenarios
+Monitoring & Logging	CloudWatch metrics & log analysis
+Operational Troubleshooting	Incident simulation, RCA, SLA thinking
+Version Control / DevOps	Git, GitHub Actions
+📂 Portfolio Scenarios (with embedded screenshots)
 1️⃣ EC2 Troubleshooting
 
-Objective: Launch an EC2 instance via CloudFormation and verify connectivity.
+Objective: Launch an EC2 instance using CloudFormation and verify connectivity.
 
-Steps:
+Key Steps
 
 Deploy CloudFormation stack
 
-Verify instance creation
+Verify EC2 provisioning
 
-Configure & debug Security Groups
+Configure & troubleshoot Security Groups
 
-Test connectivity via SSH/ping
+Test connectivity (SSH / ping)
 
-Skills Gained: EC2 deployment, Security Group debugging, SSH connectivity, CloudFormation workflow
+Validate root cause and resolution
 
-Screenshots:
+🔍 Screenshots
+EC2 Creation
 
-
-
-
-
+Security Group Debugging
 
 2️⃣ Lambda Error Handling
 
-Objective: Diagnose and resolve Lambda function errors.
+Objective: Diagnose and resolve Lambda execution failures.
 
-Steps:
+Key Steps
 
 Deploy Lambda function
 
-Trigger an error event
+Trigger a controlled error
 
-Analyze CloudWatch logs
+Investigate CloudWatch logs
 
-Fix code or IAM permissions
+Fix IAM policy or function code
 
-Redeploy and verify
+Redeploy and validate success
 
-Skills Gained: Lambda debugging, IAM troubleshooting, CloudWatch log analysis
+🔍 Screenshots
+Lambda Error in Console
 
-Screenshots:
+CloudWatch Log Investigation
 
+3️⃣ S3 IAM Access Debugging
 
+Objective: Troubleshoot access denied issues for an IAM user accessing S3.
 
-
-3️⃣ S3 IAM Access
-
-Objective: Troubleshoot S3 bucket access via IAM policies.
-
-Steps:
+Key Steps
 
 Identify IAM user/role
 
-Review bucket policies & permissions
+Review IAM policy and bucket policy
 
-Simulate access failure via CLI
+Reproduce failure using AWS CLI
 
-Update IAM or bucket policy
+Update permissions
 
-Verify access
+Validate successful access
 
-Skills Gained: IAM policy debugging, S3 access control, AWS CLI operations
+🔍 Screenshots
+Access Denied
 
-Screenshots:
+Policy Fix Applied
 
-
-
-
-📁 Repo Structure
-cloud_support_sim/
-├── docs/screenshots/        # Scenario screenshots
-├── scenarios/               # EC2, Lambda, S3 troubleshooting exercises
-├── src/AWS_Project/         # Python automation scripts
-├── main.py                  # Python project template
-├── utils.py                 # Helper functions
-├── README.md                # Project overview
-├── requirements.txt         # Python dependencies
-└── .gitignore
+📁 Repository Structure
+AWS_Cloud_Support_Sim/
+├── docs/
+│   └── screenshots/        # All scenario screenshots
+├── scenarios/              # EC2, Lambda, S3 troubleshooting exercises
+├── src/AWS_Project/        # Python automation scripts
+├── main.py                 # Python entry point
+├── utils.py                # Helpers
+├── main.tf                 # Terraform template
+├── requirements.txt        # Python dependencies
+└── README.md               # This file
 
 📬 Contact
 
 Email: quietopscb@gmail.com
 
-GitHub: charles-bucher
+GitHub: https://github.com/charles-bucher
 
-LinkedIn: Charles-Bucher-cloud
+LinkedIn: https://www.linkedin.com/in/charles-bucher-cloud
 
-💡 Notes:
+💡 Notes
 
-Portfolio is learning-focused, simulating realistic cloud support scenarios.
+All scenarios mirror real production troubleshooting patterns
 
-Monitor AWS costs when running EC2, Lambda, or S3 services.
+Costs can apply when provisioning AWS resources — clean them up
 
-Screenshots demonstrate reproducible incident resolution.
-
+Screenshots show reproducible steps and validated fixes
