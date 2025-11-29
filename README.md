@@ -1,12 +1,5 @@
 ⚡ AWS Cloud Support Simulation
 
-
-
-
-
-
-
-
 Simulate real-world AWS Cloud Support workflows, gain hands-on troubleshooting experience, and level up your CloudOps skills.
 
 👋 About This Repository
@@ -24,12 +17,11 @@ Verification & validation
 Ideal for aspiring Cloud Support Engineers, NOC Analysts, and L1/L2 Support Specialists, demonstrating practical skills, operational thinking, and automation knowledge.
 
 🚀 Skills & Tools
-Category	Skills & Tools
-AWS Services	EC2, Lambda, S3, IAM, CloudWatch, CloudFormation
-Automation & IaC	Python scripting, Terraform, CloudFormation basics
-Monitoring & Logging	CloudWatch metrics, dashboards, log analysis
-Operational Troubleshooting	Incident simulation, root cause analysis (RCA), SLA thinking, structured problem-solving
-Version Control / DevOps	Git, GitHub Actions, CI/CD pipelines
+Category	Skills & Tools	AWS Services
+CloudOps / Support	Incident simulation, RCA, SLA thinking, structured problem-solving	EC2, Lambda, S3, IAM, CloudWatch, CloudFormation
+Automation & IaC	Python scripting, Terraform, CloudFormation basics	N/A
+Monitoring & Logging	CloudWatch metrics, dashboards, log analysis	CloudWatch
+Version Control / DevOps	Git, GitHub Actions, CI/CD pipelines	N/A
 📂 Scenarios & Screenshots
 1️⃣ EC2 Troubleshooting
 
@@ -49,13 +41,9 @@ Validate root cause & resolution
 
 Screenshots:
 
-Stack Created
 
 
-Security Group Troubleshooting
 
-
-Connectivity Verification
 
 
 2️⃣ Python / Automation Steps
@@ -72,25 +60,15 @@ Run automation scripts
 
 Screenshots:
 
-Git Commit
 
 
-Requirements Installation
 
 
-Running Main Script
 
+🏗️ Architecture Diagram
 
-🏗️ Repository Structure
-AWS_Cloud_Support_Sim/
-├── docs/screenshots/       # Scenario screenshots
-├── scenarios/              # EC2, Lambda, S3 exercises
-├── src/AWS_Project/        # Python automation scripts
-├── main.py                 # Python entry point
-├── utils.py                # Helper functions
-├── main.tf                 # Terraform template
-├── requirements.txt        # Python dependencies
-└── README.md               # Project overview
+Diagrams:
+![AWS Support Flow Diagram](Diagrams/AWS Support Flow Diagram.png)
 
 🔥 Career Goal
 
@@ -104,11 +82,11 @@ Build measurable impact via CloudOps projects and operational problem-solving
 
 Email: quietopscb@gmail.com
 
-GitHub: https://github.com/charles-bucher
+GitHub: charles-bucher
 
-LinkedIn: https://linkedin.com/in/charles-bucher-cloud
+LinkedIn: Charles Bucher
 
-Indeed: https://profile.indeed.com/p/charlesb-x0xr5fx
+Indeed: Profile
 
 💡 Notes
 
@@ -121,18 +99,31 @@ Screenshots show reproducible steps and validated fixes
 Topics / Keywords: terraform, incident-response, cloudwatch, ci-cd, infrastructure-as-code, aws-security, noc, security-automation, devsecops, cloudops, cloud-support, python-automation, aws-guardduty
 
 
-## ??? Diagrams from Diagrams
+## ??? Architecture Diagram
 
 ![](Diagrams/AWS Support Flow Diagram.png)
 
 ![](Diagrams/Workflow.png)
 
 
+## ??? Scenario Screenshots
 
-## ??? Diagrams from Diagrams
+![](docs/screenshots/ACSS_01_ec2_connectivity_ping.png)
 
-![](Diagrams/AWS Support Flow Diagram.png)
+![](docs/screenshots/ACSS_02_ec2_instance_details.png)
 
-![](Diagrams/Workflow.png)
+![](docs/screenshots/ACSS_03_ec2_ping_test.png)
+
+![](docs/screenshots/ACSS_04_ec2_security_group.png)
+
+![](docs/screenshots/ACSS_05_ec2_security_group_verify.png)
+
+![](docs/screenshots/ACSS_06_ec2_stack_created.png)
+
+![](docs/screenshots/ACSS_07_python_git_commit.png)
+
+![](docs/screenshots/ACSS_08_python_requirements.png)
+
+![](docs/screenshots/ACSS_09_python_run_main.png)
 
 
