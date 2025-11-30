@@ -1,129 +1,191 @@
-⚡ AWS Cloud Support Simulation
-
-Simulate real-world AWS Cloud Support workflows, gain hands-on troubleshooting experience, and level up your CloudOps skills.
-
-👋 About This Repository
-
-This repository provides realistic AWS support scenarios, following the full lifecycle of a cloud support ticket:
-
-Customer report / incident trigger
-
-Root cause analysis
-
-Resolution implementation
-
-Verification & validation
-
-Ideal for aspiring Cloud Support Engineers, NOC Analysts, and L1/L2 Support Specialists, demonstrating practical skills, operational thinking, and automation knowledge.
-
-🚀 Skills & Tools
-Category	Skills & Tools	AWS Services
-CloudOps / Support	Incident simulation, RCA, SLA thinking, structured problem-solving	EC2, Lambda, S3, IAM, CloudWatch, CloudFormation
-Automation & IaC	Python scripting, Terraform, CloudFormation basics	N/A
-Monitoring & Logging	CloudWatch metrics, dashboards, log analysis	CloudWatch
-Version Control / DevOps	Git, GitHub Actions, CI/CD pipelines	N/A
-📂 Scenarios & Screenshots
-1️⃣ EC2 Troubleshooting
-
-Objective: Launch an EC2 instance via CloudFormation and verify connectivity.
-
-Key Steps:
-
-Deploy CloudFormation stack
-
-Verify EC2 provisioning
-
-Configure & troubleshoot Security Groups
-
-Test connectivity (SSH / ping)
-
-Validate root cause & resolution
-
-Screenshots:
+⚡ AWS Cloud Support Simulation (Hands-On Troubleshooting Lab)
 
 
 
 
 
 
-2️⃣ Python / Automation Steps
-
-Objective: Automate CloudOps tasks and manage code deployments.
-
-Key Steps:
-
-Commit Python scripts to Git
-
-Install dependencies via requirements.txt
-
-Run automation scripts
-
-Screenshots:
 
 
 
 
+A complete AWS Cloud Support & CloudOps simulation designed to demonstrate real troubleshooting skills, root-cause analysis, automation, monitoring, and infrastructure management.
 
+This repository was built to align with Cloud Support Engineer, NOC Engineer, CloudOps, and Site Support roles.
+
+🧩 Project Overview
+
+This repo simulates the actual workflow used in Cloud Support environments:
+
+Incident intake → analysis → resolution → validation
+
+Debugging AWS services (EC2, S3, IAM, Lambda)
+
+Identifying system misconfigurations and network issues
+
+Automating CloudOps tasks with Python
+
+Validating infrastructure with Terraform / CloudFormation
+
+Documenting reproducible fixes
+
+Recruiters can evaluate CloudOps competency directly from this repo.
+
+🚀 Core Skills Demonstrated
+✔ Cloud Support & Troubleshooting
+
+SSH failures, network reachability, EC2 access
+
+IAM permission debugging
+
+S3 access issues
+
+Lambda execution failures
+
+Log and metric interpretation (CloudWatch)
+
+✔ Automation
+
+Python scripting for operational tasks
+
+Log parsing, validation, CLI automation
+
+Dependency management (requirements.txt)
+
+✔ Infrastructure as Code
+
+Terraform provisioning
+
+CloudFormation deployment & validation
+
+✔ Monitoring & Logging
+
+AWS CloudWatch: metrics, alarms, logs
+
+Diagnostic workflow: identify → isolate → remediate
+
+✔ DevOps Practices
+
+Git version control
+
+GitHub Actions
+
+Repo organization, code quality, documentation
+
+This layout is designed for ATS keyword detection and quick recruiter scanning.
 
 🏗️ Architecture Diagram
 
-Diagrams:
-![AWS Support Flow Diagram](Diagrams/AWS Support Flow Diagram.png)
+This flow illustrates the lifecycle of every troubleshooting scenario in this repo—incident → RCA → remediation → verification.
 
-🔥 Career Goal
+📂 Scenario Catalog (Recruiter View)
+1️⃣ EC2 Troubleshooting Scenario
 
-Start as Cloud Support / NOC Engineer (remote preferred)
+Objectives:
 
-Gain hands-on troubleshooting, automation, and documentation experience
+Deploy EC2 via CloudFormation
 
-Build measurable impact via CloudOps projects and operational problem-solving
+Verify provisioning
+
+Fix Security Group rules
+
+Restore SSH connectivity
+
+Document RCA + resolution steps
+
+Screenshots:
+
+
+
+
+2️⃣ Python Automation Scenario
+
+Objectives:
+
+Run Python-based operational tasks
+
+Use scripts for log validation
+
+Automate repetitive CloudOps steps
+
+Screenshots:
+
+
+
+
+🔧 How to Run the Lab
+# Clone the repository
+git clone https://github.com/charles-bucher/AWS_Cloud_Support_Sim.git
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# (Optional) Deploy sample AWS infrastructure
+terraform init
+terraform apply
+
+
+Then select a scenario from /scenarios and follow the documented troubleshooting path.
+
+🎯 Role Alignment
+
+This project is aligned with the responsibilities of:
+
+AWS Cloud Support Associate / Engineer
+
+NOC Analyst / NOC Technician
+
+Cloud Support Specialist
+
+Cloud Operations Engineer (CloudOps)
+
+L1/L2 Technical Support (Cloud Focus)
+
+Your repo demonstrates:
+
+Incident diagnosis
+
+Real AWS debugging
+
+Automation mindset
+
+Infrastructure validation
+
+Documentation discipline
+
+Production support awareness
+
+Exactly what recruiters look for.
+
+🔥 Career Objective
+
+Build a portfolio of hands-on, validated Cloud Support scenarios that show:
+
+AWS troubleshooting competency
+
+Python and automation capability
+
+Infra reliability thinking
+
+Log-based debugging
+
+Endpoint + network diagnostics
+
+Infrastructure-as-code workflow usage
+
+This repo is intentionally crafted to be recruiter-ready and ATS-friendly.
 
 📬 Contact
 
+GitHub: https://github.com/charles-bucher
+
+LinkedIn: https://www.linkedin.com/in/charles-bucher-cloud
+
 Email: quietopscb@gmail.com
 
-GitHub: charles-bucher
+📝 Additional Notes
 
-LinkedIn: Charles Bucher
+All scenarios mirror real Cloud Support incident patterns
 
-Indeed: Profile
-
-💡 Notes
-
-All scenarios mirror real production troubleshooting patterns
-
-Provisioned AWS resources may incur costs — clean up after exercises
-
-Screenshots show reproducible steps and validated fixes
-
-Topics / Keywords: terraform, incident-response, cloudwatch, ci-cd, infrastructure-as-code, aws-security, noc, security-automation, devsecops, cloudops, cloud-support, python-automation, aws-guardduty
-
-
-## ??? Architecture Diagram
-
-![](Diagrams/AWS Support Flow Diagram.png)
-
-![](Diagrams/Workflow.png)
-
-
-## ??? Scenario Screenshots
-
-![](docs/screenshots/ACSS_01_ec2_connectivity_ping.png)
-
-![](docs/screenshots/ACSS_02_ec2_instance_details.png)
-
-![](docs/screenshots/ACSS_03_ec2_ping_test.png)
-
-![](docs/screenshots/ACSS_04_ec2_security_group.png)
-
-![](docs/screenshots/ACSS_05_ec2_security_group_verify.png)
-
-![](docs/screenshots/ACSS_06_ec2_stack_created.png)
-
-![](docs/screenshots/ACSS_07_python_git_commit.png)
-
-![](docs/screenshots/ACSS_08_python_requirements.png)
-
-![](docs/screenshots/ACSS_09_python_run_main.png)
-
+AWS resources may incur cost — destroy when finished
 
