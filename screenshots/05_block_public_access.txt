@@ -1,0 +1,5 @@
+=== 05_block_public_access ===
+Command: aws s3api put-public-access-block --bucket charles-secure-static-site-bash --public-access-block-configuration BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true || echo '⚠️ Failed to block public access'
+
+An error occurred (NoSuchBucket) when calling the PutPublicAccessBlock operation: The specified bucket does not exist
+⚠️ Failed to block public access

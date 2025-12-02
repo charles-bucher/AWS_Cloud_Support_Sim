@@ -1,0 +1,5 @@
+=== 03_create_bucket ===
+Command: aws s3api create-bucket --bucket charles-secure-static-site-bash --region us-east-1 || echo '⚠️ Access denied or bucket exists'
+
+An error occurred (AccessDenied) when calling the CreateBucket operation: User: arn:aws:iam::722631436033:user/terraform-user is not authorized to perform: s3:CreateBucket on resource: "arn:aws:s3:::charles-secure-static-site-bash" because no identity-based policy allows the s3:CreateBucket action
+⚠️ Access denied or bucket exists

@@ -1,0 +1,3 @@
+=== 01_iam_check ===
+Command: aws sts get-caller-identity --output text || echo '⚠️ IAM check failed'
+722631436033	arn:aws:iam::722631436033:user/terraform-user	AIDA2QQBQU4A5MIMFOC42

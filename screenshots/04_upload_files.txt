@@ -1,0 +1,4 @@
+=== 04_upload_files ===
+Command: aws s3 sync ./site s3://charles-secure-static-site-bash || echo '⚠️ Upload failed (bucket missing or access denied)'
+fatal error: An error occurred (NoSuchBucket) when calling the ListObjectsV2 operation: The specified bucket does not exist
+⚠️ Upload failed (bucket missing or access denied)
