@@ -33,13 +33,7 @@ All steps are supported with screenshots for **authenticity and proof of hands-o
 | 3 | ![EC2 Stack Deployment](screenshots/CloudSupport_03_EC2StackDeployment.png) | Deployed EC2 instances, load balancers, and other resources using Terraform |
 | 4 | ![Git Version Control](screenshots/CloudSupport_04_GitVersionControl.png) | Version-controlled infrastructure and scripts to ensure reproducibility |
 | 5 | ![Python Execution](screenshots/CloudSupport_05_PythonExecution.png) | Ran Python scripts to automate monitoring and troubleshooting tasks |
-| 6 | ![Incident Analysis](screenshots/CloudSupport_06_IncidentAnalysis.png) | Investigated system logs and error messages to identify root causes |
-| 7 | ![Resource Validation](screenshots/CloudSupport_07_ResourceValidation.png) | Confirmed that EC2 instances, load balancers, and security configurations were correct |
-| 8 | ![Service Recovery](screenshots/CloudSupport_08_ServiceRecovery.png) | Performed corrective actions and validated restored service |
-| 9 | ![End-to-End Verification](screenshots/CloudSupport_09_EndToEnd.png) | Verified complete end-to-end functionality and customer-facing systems |
-| 10 | ![Documentation](screenshots/CloudSupport_10_Documentation.png) | Documented troubleshooting steps, resolutions, and lessons learned |
-
-> ⚠️ All screenshots were captured during live simulations to ensure **authenticity**.
+|> ⚠️ All screenshots were captured during live simulations to ensure **authenticity**.
 
 ---
 
