@@ -2,6 +2,9 @@ AWS Cloud Support Simulation 🛠️☁️
 
 License: MIT | Tech: AWS, Python, Terraform
 
+![AWS Cloud Support Diagram](Diagrams/AWS_Cloud_Support_Diagram.png)
+
+
 🚀 Why This Project Exists
 
 This repository is a hands-on AWS Cloud Support lab designed to simulate real-world troubleshooting scenarios you would encounter as a Cloud Support Engineer, Technical Support Engineer, or CloudOps specialist.
