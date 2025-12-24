@@ -4,7 +4,7 @@
 This lab demonstrates how to monitor AWS resources using **Amazon CloudWatch**. It includes creating dashboards, setting alarms, and analyzing metrics for EC2 instances and other AWS services.
 
 ## Last Commit
-- **Message:** Auto-clean: stage, commit, and push  
+- **Message:** Auto-clean: stage, commit, and push
 - **Date:** 4 days ago
 
 ## Objectives
@@ -16,3 +16,15 @@ This lab demonstrates how to monitor AWS resources using **Amazon CloudWatch**. 
 1. Clone the repository:
    ```bash
    git clone <repo-url>
+
+## TL;DR
+
+*Add content here.*
+
+## Incident Scenarios
+
+*Add content here.*
+
+## Installation
+
+*Add content here.*

@@ -1,170 +1,112 @@
-# AWS Cloud Support Simulator  
-**Hands-on Incident-Driven AWS Troubleshooting Labs**
+AWS Cloud Support Simulation Labs
 
-> Realistic Cloud Support scenarios designed to mirror how AWS Support, CloudOps, and SRE teams investigate, remediate, and prevent production incidents.
+Hands-on AWS Cloud Support labs for troubleshooting EC2, S3, Lambda, IAM, GuardDuty, Security Groups, and VPC scenarios using real cloud support workflows. Focused on logs, metrics, incident response, remediation, and prevention.
 
----
+TL;DR
 
-## 🔥 Why This Repo Exists
+Practice AWS Cloud Support workflows in a realistic lab environment.
 
-Most “cloud labs” teach *how to deploy*.  
-This project teaches **how to debug when things break**.
+Includes 7 core scenarios with prebuilt infrastructure and step-by-step guidance.
 
-**AWS_Cloud_Support_Sim** is a collection of **incident-driven troubleshooting scenarios** based on real-world cloud support workflows:
-- Broken infrastructure
-- Failing permissions
-- Misconfigured security
-- Silent monitoring gaps
-- Production-style root cause analysis
+Focus on troubleshooting, automation, and root cause analysis.
 
-This repo is built for:
-- Cloud Support Engineers
-- CloudOps / DevOps Engineers
-- SRE-minded practitioners
-- Hiring managers reviewing real troubleshooting ability
+Ideal for building a cloud support portfolio and preparing for AWS Cloud Support or CloudOps roles.
 
----
+Quick Start
 
-## 🧠 What You’ll Practice Here
+Clone the repo:
 
-- 🔍 Reading logs, metrics, and error messages
-- 🧪 Reproducing failures safely
-- 🛠️ Applying targeted fixes (not guesswork)
-- 📈 Verifying recovery
-- 🔁 Preventing recurrence
-
-**No toy examples. No “hello world” labs.**
-
----
-
-## 🧪 Scenario Coverage
-
-| Category | What Breaks | Skills Tested |
-|-------|------------|--------------|
-| EC2 | SSH / connectivity failures | VPC, Security Groups, IAM, logs |
-| S3 | Access denied & public exposure | IAM policies, bucket policies |
-| Lambda | Timeouts & runtime errors | Logs, retries, permissions |
-| CloudWatch | Missing alarms & blind spots | Metrics, alerts, dashboards |
-| GuardDuty | Security findings | Detection, automation, response |
-| Networking | SG vs NACL conflicts | Traffic flow, isolation |
-| IAM | Over/under-permissioning | Least privilege, role trust |
-
-Each scenario includes:
-- 📄 Incident description
-- 🧠 Root cause analysis
-- 🛠️ Remediation steps
-- 📸 Screenshots / evidence
-- ✅ Validation checks
-
----
-
-## 📂 Repository Structure
-
-AWS_Cloud_Support_Sim/
-├── scenarios/ # Incident-based labs
-│ ├── ec2-troubleshoot/
-│ ├── s3-iam-access/
-│ ├── lambda-error/
-│ ├── guardduty-automation/
-│ └── ...
-├── screenshots/ # Visual proof of work
-├── diagrams/ # Architecture & flow diagrams
-├── scripts/ # Automation & validation tools
-├── src/ # Supporting Python utilities
-├── tests/ # Scenario & repo validation
-├── docs/ # Guides and explanations
-└── validate_repos.py # Portfolio quality gate
-
-yaml
-Copy code
-
----
-
-## 🚀 Quick Start
-
-```bash
 git clone https://github.com/charles-bucher/AWS_Cloud_Support_Sim.git
 cd AWS_Cloud_Support_Sim
-Each scenario folder contains:
 
-A README with the incident
 
-Supporting configs or scripts
+Optional: Create a Python virtual environment and install dependencies:
 
-Screenshots proving resolution
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+pip install -r requirements.txt
 
-No global deployment required — scenarios are isolated and intentional.
 
-🛠️ Tooling & Tech
-AWS: EC2, S3, Lambda, CloudWatch, GuardDuty, IAM, VPC
+Explore the scenario folders:
 
-IaC: Terraform (where appropriate)
+scenarios/
+├─ 01_cloudwatch-monitoring-scenario
+├─ 02_ec2-troubleshoot-scenario
+├─ 03_guardduty-automation-scenario
+├─ 04_iam-role-policy-scenario
+├─ 05_s3-iam-access-scenario
+├─ 06_security-groups-nacl-scenario
+├─ 07_vpc-architecture-scenario
 
-Automation: Python, PowerShell
 
-Validation: Custom repo & README validators
+Follow the README in each scenario for step-by-step instructions.
 
-Mindset: Support-first, production-aware
+Incident Scenarios
+ID	Incident	Services	Difficulty	Status
+01	EC2 connectivity issues	EC2, CloudWatch	Medium	Active
+02	S3 bucket misconfiguration	S3, IAM	Medium	Active
+03	GuardDuty alert automation	GuardDuty, Lambda	Hard	Active
+04	IAM role & policy misconfig	IAM	Medium	Active
+05	S3 bucket IAM access issues	S3, IAM	Medium	Active
+06	Security groups & NACL misconfig	EC2, VPC	Medium	Active
+07	VPC architecture verification	VPC, Subnets	Medium	Active
 
-📸 Proof, Not Promises
-This repo intentionally includes:
+Each scenario contains: prebuilt infrastructure, step-by-step instructions, screenshots, and remediation steps.
 
-Screenshots of failures and fixes
+Skills You’ll Practice
 
-Logs and metrics
+AWS EC2, S3, Lambda, IAM, GuardDuty, VPC
 
-Validation scripts
+CloudWatch metrics & dashboards
 
-Consistent documentation standards
+Incident response & troubleshooting workflows
 
-This is evidence, not claims.
+Root cause analysis
 
-🧩 How This Is Different From Tutorials
-Tutorials	This Repo
-Deploy-first	Incident-first
-Happy path	Broken by design
-“Click here”	Diagnose & decide
-No evidence	Screenshots & logs
-Toy labs	Production mindset
+Terraform & infrastructure as code (IaC)
 
-📌 Who This Is For
-If you want to:
+Python automation for AWS
 
-Break into Cloud Support
+Cloud support documentation
 
-Level up troubleshooting confidence
+Screenshots
 
-Prove hands-on AWS ability
+00_lab_environment_verified.png
 
-Show how you think, not just what you deploy
+01_vpc_architecture_setup.png
 
-You’re in the right place.
+02_vpc_subnets_routing.png
 
-📜 License
-MIT License — use freely for learning and inspiration.
+03_security_groups_network_acls.png
 
-🤝 Contributing
-See CONTRIBUTING.md if you’d like to extend scenarios or improve tooling.
+04_iam_roles_policies_setup.png
 
-🔐 Security
-See SECURITY.md for responsible disclosure.
+06_s3_bucket_setup.png
 
-📬 Contact
+07_guardduty_dashboard_overview.png
+
+08_s3_bucket_configuration.png
+
+09_cloudwatch_monitoring_dashboard.png
+
+All screenshots are included in the screenshots/ folder.
+
+Installation
+
+Clone the repo.
+
+Install dependencies (pip install -r requirements.txt) if using Python scripts.
+
+Review scenario README.md files for Terraform setup and execution instructions.
+
+License
+
+This project is licensed under the MIT License — see LICENSE
+ for details.
+
+Contact
+
 Charles Bucher
-GitHub: https://github.com/charles-bucher
-LinkedIn: https://www.linkedin.com/in/charles-bucher-cloud
-
-## 📸 Key Scenario Screenshots
-
-Below are selected highlights demonstrating hands-on AWS troubleshooting and operations:
-
-| Scenario | Screenshot |
-|----------|------------|
-| Lab environment verification | ![Lab Setup](screenshots/00_lab_environment_verified.png) |
-| VPC architecture | ![VPC Setup](screenshots/01_vpc_architecture_setup.png) |
-| Security Groups & NACLs | ![Network Security](screenshots/03_security_groups_network_acls.png) |
-| IAM Roles & Policies | ![IAM Setup](screenshots/04_iam_roles_policies_setup.png) |
-| S3 Bucket Setup | ![S3 Setup](screenshots/06_s3_bucket_setup.png) |
-| GuardDuty Monitoring | ![GuardDuty Dashboard](screenshots/07_guardduty_dashboard_overview.png) |
-| CloudWatch Monitoring | ![CloudWatch Dashboard](screenshots/09_cloudwatch_monitoring_dashboard.png) |
-
+GitHub
+ | LinkedIn
