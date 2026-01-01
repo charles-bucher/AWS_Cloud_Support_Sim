@@ -1,234 +1,161 @@
-☁️ AWS Cloud Support Simulator
+# ☁️ AWS Cloud Support Simulator
 
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen)
+![Last Commit](https://img.shields.io/github/last-commit/charles-bucher/AWS_Cloud_Support_Sim)
 
+![AWS](https://img.shields.io/badge/AWS-SysOps%20Administrator-orange)
+![CloudOps](https://img.shields.io/badge/Role-Cloud%20Support%20%7C%20CloudOps-blue)
+![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4)
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB)
 
+![CloudWatch](https://img.shields.io/badge/Monitoring-CloudWatch-success)
+![Incident](https://img.shields.io/badge/Incident%20Response-P0--P2-critical)
+![IaC](https://img.shields.io/badge/Infrastructure-As%20Code-blueviolet)
 
+---
 
+## 📌 TL;DR
+**Production-style AWS Cloud Support lab** simulating real-world incidents, alarms, and remediation workflows aligned to the **AWS SysOps Administrator** and **Cloud Support Associate** role.
 
+This project demonstrates:
+- Monitoring & alerting (CloudWatch)
+- Incident response (P0–P2 scenarios)
+- Root cause analysis
+- Infrastructure as Code (Terraform)
+- Automation & operational scripting (Python)
 
+Built to reflect **on-call CloudOps work**, not toy demos.
 
+---
 
+## 🧭 Overview
+AWS_Cloud_Support_Sim is a hands-on simulation environment designed to mirror the daily responsibilities of an AWS Cloud Support / Cloud Operations engineer.
 
+The lab intentionally introduces **misconfigurations, failures, and degraded states** so the operator must:
+- Detect issues via monitoring
+- Diagnose root causes
+- Apply fixes using AWS-native tooling and IaC
+- Document remediation steps clearly
 
+This repo prioritizes **operational realism over theory**.
 
-Hands-on AWS Cloud Support & SysOps simulation lab focused on real-world troubleshooting, monitoring, automation, and incident response across core AWS services.
+---
 
-This repository is designed to mirror the day-to-day responsibilities of an AWS Cloud Support / SysOps Associate and serves as a portfolio project for cloud career transitioners.
+## 🏗 Architecture
 
-📝 TL;DR
+**Core AWS Services Used**
+- EC2 (compute workloads & failure simulation)
+- CloudWatch (metrics, alarms, logs)
+- IAM (least-privilege roles)
+- VPC (basic networking context)
+- S3 (logs & artifacts)
 
-Simulates real AWS production incidents (P0–P2)
+**Tooling**
+- Terraform → infrastructure provisioning & drift control  
+- Python → automation, checks, remediation helpers  
+- YAML → configuration & workflows  
 
-Troubleshoot EC2, Lambda, S3, VPC, IAM, CloudWatch issues
+**High-Level Flow**
+1. Terraform provisions infrastructure
+2. Faults are introduced (manual or scripted)
+3. CloudWatch alarms trigger
+4. Investigation & remediation occurs
+5. Resolution is documented
 
-Uses Terraform, Python (boto3), AWS CLI
+---
 
-Built to align directly with AWS SysOps Administrator (SOA-C02)
+## 🧪 Scenarios Covered
+- EC2 CPU / memory saturation
+- Misconfigured security groups
+- IAM permission failures
+- Missing or broken CloudWatch alarms
+- Infrastructure drift detection
+- Log-based troubleshooting
 
-Portfolio-ready, recruiter-readable, cert-aligned
+Each scenario reflects **real AWS Support ticket patterns**.
 
-📌 Table of Contents
+---
 
-Overview
+## ▶️ Usage
 
-Features
+### Prerequisites
+- AWS account (free tier is sufficient)
+- AWS CLI configured
+- Terraform ≥ 1.x
+- Python 3.9+
 
-Architecture
-
-Repository Structure
-
-Usage
-
-Screenshots
-
-Skills Demonstrated
-
-SysOps & Career Alignment
-
-Tech Stack
-
-License
-
-🔍 Overview
-
-This project simulates real AWS Cloud Support tickets and operational failures that commonly occur in production environments.
-
-Each scenario requires you to:
-
-Identify the root cause using CloudWatch metrics/logs
-
-Validate IAM, networking, and service configurations
-
-Apply a fix using AWS Console, CLI, or automation
-
-Prevent recurrence through monitoring or IaC improvements
-
-The goal is not just “deployment,” but operational excellence, troubleshooting depth, and clear documentation — exactly what AWS support and SysOps roles expect.
-
-🔥 Features
-
-EC2 connectivity and performance failures
-
-Lambda timeout, memory, and permission issues
-
-S3 access and policy misconfigurations
-
-VPC routing, NAT, and security group errors
-
-CloudWatch alarms, dashboards, and log analysis
-
-Terraform-based infrastructure deployments
-
-Python automation scripts for validation and remediation
-
-Incident-style runbooks and troubleshooting notes
-
-🏗️ Architecture
-
-High-level architecture used across scenarios:
-
-Internet
-   |
-Application Load Balancer
-   |
-EC2 / Lambda (App Tier)
-   |
-RDS / DynamoDB / S3
-
-
-Core AWS Components
-
-VPC with public/private subnets
-
-Security Groups & IAM roles
-
-CloudWatch Logs, Metrics, Alarms
-
-Terraform-managed infrastructure
-
-AWS CLI & boto3 automation
-
-Designed to reflect SysOps-level operational responsibility, not just architecture diagrams.
-
-📂 Repository Structure
-AWS_Cloud_Support_Sim/
-├── scenarios/          # Incident-based labs
-├── terraform/          # IaC modules & environments
-├── scripts/            # Python automation & validation
-├── cloudwatch/         # Dashboards, alarms, queries
-├── docs/               # Runbooks & troubleshooting notes
-└── screenshots/        # Visual evidence for portfolio
-
-⚡ Usage
-Prerequisites
-
-AWS Account (Free Tier OK)
-
-Python 3.9+
-
-Terraform v1.0+
-
-AWS CLI v2
-
-Setup
-git clone https://github.com/charles-bucher/AWS_Cloud_Support_Sim.git
-cd AWS_Cloud_Support_Sim
-pip install -r requirements.txt
-aws configure
-
-Run a Scenario
-cd scenarios/ec2-connectivity
+### Deploy Infrastructure
+```bash
 terraform init
 terraform apply
+Trigger a Scenario
+Follow scenario instructions in /scenarios
 
+Observe CloudWatch alarms
 
-Follow the scenario README to:
+Investigate metrics & logs
 
-Investigate the issue
+Remediate
+Apply fixes manually or via Terraform/Python
 
-Apply remediation
+Validate alarm recovery
 
-Validate the fix
+Document resolution steps
 
-Tear down resources
+📸 Screenshots (Examples)
+Screenshots intentionally reflect real operator views
 
-🖼️ Screenshots
+CloudWatch alarm firing
 
-Screenshots are included to provide visual proof of hands-on work.
+EC2 metrics during incident
 
-CloudWatch Dashboards
+Terraform plan/apply output
 
-Terraform apply outputs
+Incident resolution confirmation
 
-Incident validation scripts
+📁 See /screenshots directory.
 
-screenshots/
-├── cloudwatch_dashboard.png
-├── terraform_apply.png
-└── incident_validation.png
+📁 Repository Structure
+text
+Copy code
+.
+├── terraform/        # Infrastructure as Code
+├── scripts/          # Python automation & helpers
+├── scenarios/        # Incident simulations
+├── screenshots/     # Evidence & visuals
+├── docs/             # Runbooks & explanations
+└── README.md
+🎯 Skills Demonstrated (SysOps-Aligned)
+AWS Monitoring & Alerting
 
-🧠 Skills Demonstrated
+Incident Response (P0–P2)
 
-AWS Cloud Support troubleshooting
+Root Cause Analysis (RCA)
 
-SysOps-level monitoring & alerting
+Infrastructure as Code
 
-CloudWatch Logs & Metrics analysis
+Change management mindset
 
-IAM permission debugging
+Clear technical documentation
 
-VPC networking fundamentals
+This repo is designed to answer:
 
-Infrastructure as Code (Terraform)
+“Can this person handle production cloud issues?”
 
-Python automation with boto3
+🚀 Why This Matters
+Most portfolios show what AWS services are.
+This project shows how to operate them under pressure.
 
-Incident documentation & root cause analysis
-
-🎯 SysOps & Career Alignment
-
-Target Roles
-
-AWS Cloud Support Associate
-
-SysOps Administrator
-
-Cloud Operations Engineer
-
-Junior Cloud Engineer
-
-Certification Alignment
-
-AWS SysOps Administrator – Associate (SOA-C02)
-
-AWS Solutions Architect – Associate (SAA-C03)
-
-This project is intentionally operations-heavy, not architecture-only.
-
-🛠️ Tech Stack
-
-AWS: EC2, Lambda, S3, IAM, VPC, CloudWatch
-
-IaC: Terraform
-
-Automation: Python (boto3), AWS CLI
-
-Monitoring: CloudWatch Dashboards & Alarms
-
-Docs: Markdown, runbooks, diagrams
+That’s the difference between studying cloud and working cloud.
 
 📄 License
+MIT License — free to use, modify, and learn from.
 
-This project is licensed under the MIT License.
+👤 Author
+Charles Bucher
+AWS Cloud Support | CloudOps
+Focused on troubleshooting, automation, and production readiness
 
-You are free to:
-
-Use
-
-Modify
-
-Distribute
-
-Reference in portfolios and resumes
-
-See the LICENSE file for details.
+yaml
+Copy code
